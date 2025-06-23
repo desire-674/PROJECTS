@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="C:\Users\GANESH\Desktop\weather app\style.css" />
+
+  <script src="script.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <main class="main-container">
+
+
+    <!-- Search Input -->
+
+    <section class="input-container">
+      <input class="city-input" placeholder="Search city" type="text" aria-label="City name" />
+      <button class="search-btn" aria-label="Search">
+        <span class="material-symbols-outlined">search</span>
+      </button>
+
+    </section>
+
+    <!-- Weather Info Section -->
+
+    <section class="weather-info" style="display: none;">
+
+      <div class="location-date-container">
+
+        <div class="location">
+
+          <!-- Location Icon -->
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+               class="bi bi-geo-alt" viewBox="0 0 16 16">
+
+            <path d="..."/>
+
+          </svg>
+
+          <h4 class="country-txt">City</h4>
+
+        </div>
+
+        <h5 class="current-date-txt regular-txt">Date</h5>
+
+      </div>
+
+      <div class="weather-summary-container">
+
+        <img src="C:\Users\GANESH\Desktop\weather app\assets\weather\clouds.svg" class="summary-container-img" alt="Weather Icon" />
+        <div class="weather-summary-info">
+
+          <h1 class="temp-txt">0 ℃</h1>
+
+          <h3 class="condition-txt regular-txt">Condition</h3>
+        </div>
+      </div>
+
+      <div class="weather-conditions-container">
+        <div class="condition-item">
+
+          <!-- Humidity Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+            <path d="..."/>
+          </svg>
+          <div class="condition-info">
+            <h5 class="regular-txt">Humidity</h5>
+            <h5 class="humidity-value-txt">0%</h5>
+          </div>
+        </div>
+
+        <div class="condition-item">
+
+          <!-- Wind Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
+            <path d="..."/>
+          </svg>
+          <div class="condition-info">
+            <h5 class="regular-txt">Wind Speed</h5>
+            <h5 class="wind-value-txt">0 m/s</h5>
+          </div>
+        </div>
+      </div>
+      <div class="forecast-items-container"></div>
+    </section>
+
+
+
+
+
+    <!-- Prompt Section -->
+
+    <section class="search-city section-message">
+
+      <img src="C:\Users\GANESH\Desktop\weather app\assets\message\search-city.png" alt="Search city illustration" />
+      <h4>Search City</h4>
+      <h4 class="regular-txt">Find out the weather conditions of the city</h4>
+    </section>
+
+    <!-- Not Found Section -->
+    
+    <section class="not-found section-message" style="display: none;">
+      <img src="C:\Users\GANESH\Desktop\weather app\assets\message\not-found.png" alt="City not found illustration" />
+      <h4>City Not Found</h4>
+      <h4 class="regular-txt">Please check the city name and try again.</h4>
+    </section>
+  </main>
+</body>
+</html>
